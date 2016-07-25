@@ -1,0 +1,35 @@
+{
+  "name": "nodejs-backend-webpack-hmr",
+  "version": "0.0.1",
+  "description": "Node.js Backend with Webpack and HMR",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npm-run-all run-webpack --parallel run-webpack-watch run-nodemon",
+    "run-webpack": "webpack",
+    "run-webpack-watch": "webpack --watch",
+    "run-nodemon": "nodemon build/bundle.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "webpack"
+  ],
+  "author": "visvadw",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-core": "^6.11.4",
+    "babel-loader": "^6.2.4",
+    "nodemon": "^1.9.2",
+    "npm-run-all": "^2.3.0",
+    "webpack": "^1.13.1"
+  },
+  "dependencies": {
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/visvadw/nodejs-backend-webpack-hmr.git"
+  },
+  "bugs": {
+    "url": "https://github.com/visvadw/nodejs-backend-webpack-hmr/issues"
+  },
+  "homepage": "https://github.com/visvadw/nodejs-backend-webpack-hmr#readme"
+}
