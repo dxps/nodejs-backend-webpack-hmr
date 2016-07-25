@@ -15,10 +15,16 @@ setInterval(
 		console.log('counter:',counter);
 	}, 3000);
 
+// check if HMR is enabled
 if (module.hot) {
 
+	// accept itself
+	module.hot.accept();
+
+	// accept update of dependency
 	module.hot.accept('./lib1', function () {
 
+		// reload the dependency and use it
 		lib1 = require('./lib1');
 		console.log('lib1 version: ', lib1.version());
 		console.log('lib1 data: ', lib1.data);
